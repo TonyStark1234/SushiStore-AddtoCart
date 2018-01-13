@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment</title>
+	<link rel="stylesheet" href="css/Payment.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<body>
+	<div id="page">
+		<div id="header">
+			<div id="sidebar">
+				<a href="index.html" id="logo"><img src="images/logo.png" alt="LOGO"></a>
+				<div id="navigation">
+					<ul>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="contents">
+			<div id="about">
+				<div class="container">
+<form action="Thank you.html" method="get">
+  <section class="paymentInformation">
+    <h3>Payment Information</h3>
+    <ul>
+      
+      <li>
+        <div class="col-span-100">
+          <input type="text" id="nameOnCard" name="nameOnCard"  placeholder="Name on Card" required/>
+        </div>
+      </li>
+      <li>
+        <div class="col-span-100">
+          <input type="text" id="cardNumber" name="cardNumber" placeholder="Credit Card #" required />
+        </div>
+      </li>
+      
+      <li>
+        <div class="col-span-50">
+          <select class="thickGrayDblBorder" id="expMonth" name="expMonth" required >
+            <option value="">Expiration Month</option>
+            <option value="0">January</option>
+            <option value="1">February</option>
+            <option value="2">March</option>
+            <option value="3">April</option>
+            <option value="4">May</option>
+            <option value="5">June</option>
+            <option value="6">July</option>
+            <option value="7">August</option>
+            <option value="8">September</option>
+            <option value="9">October</option>
+            <option value="10">November</option>
+            <option value="11">December</option>
+            
+
+          </select>
+        </div>
+        <div class="col-span-50">
+            <select class="thickGrayDblBorder"  id="expYear" name="expYear" required >
+              <option value="">Expiration Year</option>
+              <option value="0">2018</option>
+              <option value="1">2019</option>
+              <option value="2">2020</option>
+              <option value="3">2021</option>
+              <option value="4">2022</option>
+              <option value="5">2023</option>
+            </select>
+        </div>
+      </li>
+      <li>
+        <div class="col-span-80">
+          <input type="text" id="securityCode" name="securityCode" placeholder="Security Code" required />
+        </div>
+     
+      </li>
+    
+    </ul>
+  </section>
+  
+  <section class="deliveryAddress">
+    <h3>Delivery Address</h3>
+    <ul>
+      <li>
+        <div class="col-span-33">
+          <input type="text" id="shipHouseNumber" name="shipHouseNumber" placeholder="House #" required /> 
+        </div>
+        <div class="col-span-66">
+          <input type="text" id="shipStreetName" name="shipStreetName" placeholder="Street Name" required  />
+        </div>
+      </li>
+      
+
+      <li>
+        <div class="col-span-100">
+        <input type="text" id="shipCity" name="shipCity" placeholder="City"  required />
+        </div>
+        </li>
+      <li>
+        <div class="col-span-50">
+        <select class="thickGrayDblBorder" id="shipState" name="shipState" required >
+        <option value="">Region</option>
+          <option value="0">Region I</option>
+          <option value="1">Region II</option>
+          <option value="2">NCR</option>
+          <option value="3">CAR</option>
+          <option value="4">Region III</option>
+          <option value="5">Region IV</option>
+          <option value="6">MIMAROPA</option>
+          <option value="7">Region V</option>
+          <option value="8">Region VI</option>
+          <option value="9">Region VII</option>
+          <option value="10">Region VIII</option>
+          <option value="11">Region XI</option>
+          <option value="12">Region X</option>
+          <option value="13">Region XI</option>
+          <option value="14">Region XII</option>
+          <option value="15">Region ARMM</option>
+        </select>
+        </div>
+        <div class="col-span-50">
+        <input type="text" id="shipZip" name="shipZip" placeholder="Zipcode" required  />
+        </div>
+        </li>
+      <li class="smallPrint">
+        <div class="col-span-100">
+          Sales tax may apply.
+        </div>
+        </li>
+      
+        <li>
+          <div class="col-span-100 grayBg fauxTable">
+            <div class="fauxTableCell vertMiddle">
+              <label for="chkBillingDifferent">Billing Address is different than delivery address</label>
+              <input type="checkbox" name="chkBillingDifferent" id="chkBillingDifferent" value="1" />
+            </div>
+          </div>
+      </li>
+    </ul>
+  </section>
+  
+  <section class="billingAddress">
+    <h3>Billing Address</h3>
+    <ul>
+      <li>
+        <div class="col-span-33">
+        <input type="text" id="billHouseNumber" name="billHouseNumber" placeholder="House #"  required /> 
+        </div>
+        <div class="col-span-66">
+          <input type="text" id="streetName" name="streetName" placeholder="Street Name" required  />
+        </div>
+        </li>
+      
+      <li>
+        <div class="col-span-100">
+          <input type="text" id="billCity" name="billCity" placeholder="City"  required />
+        </div>
+      </li>
+      <li>
+        <div class="col-span-50">
+        <select id="billState" class="thickGrayDblBorder" name="billState" required >
+          <option value="">Region</option>
+          <option value="0">Region I</option>
+          <option value="1">Region II</option>
+          <option value="2">NCR</option>
+          <option value="3">CAR</option>
+          <option value="4">Region III</option>
+          <option value="5">Region IV</option>
+          <option value="6">MIMAROPA</option>
+          <option value="7">Region V</option>
+          <option value="8">Region VI</option>
+          <option value="9">Region VII</option>
+          <option value="10">Region VIII</option>
+          <option value="11">Region XI</option>
+          <option value="12">Region X</option>
+          <option value="13">Region XI</option>
+          <option value="14">Region XII</option>
+          <option value="15">Region ARMM</option>
+
+        </select>
+        </div>
+        <div class="col-span-50">
+        <input type="text" id="billZip" name="billZip" placeholder="Zipcode" required 	 />
+        </div>
+        </li>
+    </ul>
+  </section>
+ 
+ 
+  
+  
+  <section class="subscriberAgreement">
+    <h3>Subscriber Agreement</h3>
+    <ul>
+      <li>
+        <div class="col-span-100">
+        <input class="overRide-noHeight" type="checkbox" id="chkSubAgree" name="chkSubAgree" value="1" required/>
+        <label class="overRide-floatRight" for="chkSubAgree">You must read and agree to out <a href="#">Subscriber Agreement</a> and <a href="#">Privacy Policy</a></label>
+        </div>
+        </li>
+      <li>
+        <div class="col-span-100">
+          <input    type="submit" class="btn"  id="btnComplete" name="btnComplete" value="Complete Purchase »" >
+          <a href="Thank You.html"></a></input>
+        </div>
+        </li>
+      
+    </ul>
+  </section>
+  </form>
+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			
+				<div class="footer">
+					<div id="connect">
+						<a href="https://web.facebook.com/gosushiph/" target="_blank" class="facebook"></a> <a  target="_blank" class="twitter"></a> <a href="https://www.instagram.com/gosushiph/" target="_blank" class="vimeo"></a>
+					</div>
+					<p>
+						Copyright 2017 Go Sushi. All Rights Reserved.
+					</p>
+				</div>
+		
+	</div>
+
+</body>
+</html>

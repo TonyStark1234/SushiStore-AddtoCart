@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Go Sushi</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="shortcut icon" type="image/x-icon" href="Images/sushi icon.png" />
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div id="sidebar">
+				<a href="index.html" id="logo"><img src="images/logo.png" alt="LOGO"></a>
+				<div id="navigation">
+					<ul>
+						<li class="selected">
+							<a href="index.html">Home</a>
+						</li>
+						<li class="menu">
+							<a href="menu.html">Order Online</a>
+							
+						</li>
+						
+						<li class="last">
+							<a href="about.html">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="adbox">
+				<h1>Go Sushi!</h1><br><br><br><br><br><br><br>
+<div>
+  <img style="width: 550px; height: 300px; margin-left: 350px; margin-top: 100px;" class="mySlides" src="images/SlideShow (1).png">
+  <img style="width: 550px; height: 300px; margin-left: 350px; margin-top: 100px;" class="mySlides" src="images/SlideShow (2).png">
+  <img style="width: 550px; height: 300px; margin-left: 350px; margin-top: 100px;" class="mySlides" src="images/SlideShow (3).png" >
+</div>
+				<div class="frame">
+					<div class="section">
+						<p>
+							Go Sushi is a popular japanese restaurant in the Philippines that serves sushi.<br> <span>0977 841 0614 </span>
+						</p>
+					</div>
+					<div class="section">
+						<h2>TELL YOUR FRIENDS</h2>
+						<p>
+							#1 Japanese Sushi Restaurant
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="contents">
+			<div id="articles">
+				<div>
+					<div class="frame">
+						<img src="images/PhillyCheeseSteak.png" alt="Img" height="213" width="218">
+						<h2>What's New?</h2>
+						<p>
+							Click to Learn More
+						</p>
+						<a href="menu.html" class="more">Learn More</a>
+					</div>
+					<div class="frame">
+						<img src="images/California Maki.png" alt="Img" height="192" width="189">
+						<h2>California Maki</h2>
+						<p>
+							Most Selling Maki in Restaurant.
+						</p>
+						<a href="menu.html" class="more">Learn More</a>
+					</div>
+					<div id="featured">
+						<ul>
+							<li>
+								<a href="menu.html"> <img src="images/sushi1.png" alt="Img">
+								<h3>Tamaki</h3>
+								</a>
+							</li>
+							<li>
+								<a href="menu.html"> <img src="images/Cordon Bleu.png" alt="Img">
+								<h3>Cordon Bleu</h3>
+								</a>
+							</li>
+							<li>
+								<a href="menu.html"> <img src="images/sushi3.png" alt="Img">
+								<h3>Shashimi</h3>
+								</a>
+							</li>
+							<li>
+								<a href="menu.html"> <img src="images/Crazy Makihome.png" alt="Img">
+								<h3>Crazy Maki</h3>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="dummy">
+			</div>
+		</div>
+		<div id="footer">
+			<div class="header">
+				<div class="body">
+					<ul>
+						<li>
+							<h4>Rice Toppings</h4>
+							<span>&gt; <a href="menu.html">Teriyaki</a></span> <span>&gt; <a href="menu.html">Katsudon</a></span> <span>&gt; <a href="menu.html">Karage</a></span>
+						</li>
+						<li>
+							<h4>Tempura</h4>
+							<span>&gt; <a href="menu.html">Special Tempura</a></span> <span>&gt; <a href="menu.html">Tiger Prawn Tempura</a></span> <span>&gt; <a href="menu.html">Regular Tempura</a></span>
+						</li>	
+						<li>
+							<h4>Maki</h4>
+							<span>&gt; <a href="menu.html">Black Sesami Salmon</a></span> <span>&gt; <a href="menu.html">Crazy Maki</a></span> <span>&gt; <a href="menu.html">California Maki</a></span>
+						</li>
+						<li class="last-child">
+							<h4>Party Tray</h4>
+							<span>&gt; <a href="menu.html">Tempura Party Tray</a></span> <span>&gt; <a href="menu.html">Chicken Party Tray</a></span> <span>&gt; <a href="menu.html">Yakisoba</a></span>
+						</li>
+					</ul>
+				</div>
+				<div class="footer">
+					<div id="connect">
+						<a href="https://web.facebook.com/gosushiph/" target="_blank" class="facebook"></a> <a  target="_blank" class="twitter"></a> <a href="https://www.instagram.com/gosushiph/" target="_blank" class="vimeo"></a>
+					</div>
+					<p>
+						Copyright 2017 Go Sushi. All Rights Reserved.
+					</p>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+	<script type="text/javascript">
+	var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
